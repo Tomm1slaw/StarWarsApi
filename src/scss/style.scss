@@ -10,13 +10,15 @@ body {
    margin: 0;
    padding: 0;
    color: rgb(251, 255, 0);
-   text-transform: uppercase;
-   font-size: 30px;
+   font-size: 20px;
 }
 ul {
    margin: 20px 0;
    padding: 0;
    list-style: none;
+   li {
+      margin-bottom: 5px;
+   }
 }
 .btn {
    cursor: pointer;
