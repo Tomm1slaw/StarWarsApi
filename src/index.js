@@ -1,30 +1,20 @@
 import axios from 'axios';
-import { add, subtract } from './js/calculator';
-
 import './scss/style.scss';
 
-console.log(add(5, 10));
-console.log(subtract(5, 10));
+// DOM
+const searchFormEl = document.querySelector('#search-form');
+const searchInputEl = document.querySelector('#search-input');
+const searchOptionEl = document.querySelector('#search-option');
+const searchResultsEl = document.querySelector('#search-results');
 
-const getTodos = () =>
-   new Promise((resolve, reject) => {
-      setTimeout(() => {
-         resolve([1, 2, 3]);
-      }, 2000);
-   });
-
-getTodos()
-   .then(data => {
-      console.log(data);
-   })
-   .catch(err => console.log(`Error: ${err}`));
+const apiBaseUrl = 'https://swapi.co/api';
 
 axios
-   .get('https://jsonplaceholder.typicode.com/posts/1')
+   .get('https://jsonplaceholder.typicode.com/todos/1')
    .then(res => res.data)
    .then(data => {
       console.log(data);
    })
-   .catch(error => {
-      console.log(error);
+   .catch(err => {
+      console.log(err);
    });

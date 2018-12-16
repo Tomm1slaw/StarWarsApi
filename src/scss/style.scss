@@ -1,4 +1,31 @@
 body {
-   color: rgb(255, 255, 255);
-   background: rgb(100, 88, 88);
+   height: 100vh;
+   background: gray
+      url('https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?cs=srgb&dl=abstract-art-astronomy-1252890.jpg&fm=jpg')
+      no-repeat center / cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   color: rgb(251, 255, 0);
+   text-transform: uppercase;
+   font-size: 30px;
+}
+ul {
+   margin: 20px 0;
+   padding: 0;
+   list-style: none;
+}
+.btn {
+   cursor: pointer;
+   background: blue;
+   border: none;
+   color: white;
+   padding: 10px;
+}
+input,
+select {
+   padding: 10px;
 }
